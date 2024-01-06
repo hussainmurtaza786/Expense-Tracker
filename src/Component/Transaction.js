@@ -6,7 +6,7 @@ function Transaction() {
       <span>
         <h3 className="transaction-text">Transactions:</h3>
       </span>
-      <hr/>
+      <hr style={{margin:'8px 20px'}}/>
       <div className="items-transaction">
         Earning
       <div className="items-transaction-x">

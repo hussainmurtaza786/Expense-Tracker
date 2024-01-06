@@ -91,3 +91,13 @@ body {
   color: white;
   font-size: 25px;
 }
+.new-transaction{
+  margin: 2px 20px;
+}
+.description{
+  margin: 4px 6px;
+}
+.amount{
+  margin: 4px 6px;
+
+}
