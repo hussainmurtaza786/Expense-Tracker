@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 
 }
 
@@ -29,7 +29,7 @@ body {
 #container {
   
   /* width: 50%; */
-  height: 80vh;
+  height: 100%;
 }
 
 .font-size {
@@ -42,10 +42,10 @@ body {
   display: flex;
   padding: 10px 25px;
   justify-content: space-evenly;
+  background-color: rgb(212, 215, 255);
 }
 
 .income {
-  background-color: rgb(97, 160, 255);
   /* height: 40px;
   width: 110px; */
   padding: 0px 8px;
@@ -53,7 +53,6 @@ body {
 
 .expense {
   padding: 0px 8px;
-  background-color: rgb(255, 73, 73);
   /* height: 40px;
   width: 100px; */
 
@@ -78,13 +77,26 @@ body {
   border: 2px solid black;
   justify-content: space-around;
 }
-
-.balance-amount {
-  width: 12vw;
+.salary-box{
+  display: flex;
+  justify-content: center;
+}
+.income-here{
+  margin: 2px 8px;
+  font-size: 20px;
+}
+.submit{
+  margin: 2px 15px;
+}
+#balance-amount {
+  width: 15vw;
   padding: 2px 8px;
   height: 4vh;
+  border: none;
+  background-color: antiquewhite;
+  font-size: 20px;
 }
-.rs-inex{
+#rs-inex{
   text-decoration: underline 2px black;
 }
 .text{
@@ -95,9 +107,26 @@ body {
   margin: 2px 20px;
 }
 .description{
-  margin: 4px 6px;
+  margin: 0px 6px;
+  width: 15vw;
+  height: 4vh;
+  border-radius: 5px;
+  padding: 4px 15px;
+  border: none;
+  background-color:antiquewhite ;
+  font-size: 20px;
+color: rgb(25, 0, 255);
 }
 .amount{
-  margin: 4px 6px;
+color: rgb(25, 0, 255);
+  padding: 4px 15px;
+  width: 15vw;
+  border: none;
+  background-color:antiquewhite ;
+  font-size: 20px;
+  height: 4vh;
+  margin: 0px 6px;
+  border-radius: 5px;
+
 
 }

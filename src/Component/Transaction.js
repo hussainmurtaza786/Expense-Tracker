@@ -1,31 +1,22 @@
 import React from 'react'
 
-function Transaction() {
+function Transaction({ transactions }) {
   return (
     <div id="transaction">
       <span>
         <h3 className="transaction-text">Transactions:</h3>
       </span>
-      <hr style={{margin:'8px 20px'}}/>
-      <div className="items-transaction">
-        Earning
-      <div className="items-transaction-x">
-        Rs:80000
-      </div>
-      </div>
-      <div className="items-transaction">
-        Shopping
-      <div className="items-transaction-x">
-        Rs:20000
-      </div>
-      </div>
-      <div className="items-transaction">
-        Education
-      <div className="items-transaction-x">
-        Rs:30000
-      </div>
-      </div>
-
+      <hr style={{ margin: '8px 20px' }} />
+      {transactions.map((trans, idx) => {
+        return (
+          <div key={idx} className="items-transaction">
+            {trans.desc}
+            <div className="items-transaction-x">
+              Rs:{trans.amount}
+            </div>
+          </div>
+        )
+      })}
     </div>
   )
 }
