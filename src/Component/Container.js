@@ -10,9 +10,16 @@ const transactionData = [
   { desc: "Shopping", amount: -5000 },
   { desc: "Shopping", amount: -10000 },
 ]
+const expense = [
+  {
+    income: "50000",
+    expense: "20000"
+  }
+]
 
 function Container() {
   const [transactions, setTransaction] = useState(transactionData);
+
 
   const addNewTransaction = (desc, amount) => {
     const newTrans = { desc: desc, amount: amount }
@@ -20,13 +27,15 @@ function Container() {
     setTransaction([...transactions]);
   }
 
+
+
   return (
-    <div id="container">
+    <div id="container" >
       {/* <button onClick={() => { addNewTransaction("Shopping", -1000) }} >Add New txn</button> */}
-      <Header addNewTransaction={addNewTransaction} />
-      <Expense />
+      <Header />
+      <Expense addNewTransaction={addNewTransaction} />
       <Transaction transactions={transactions} />
-      <NewTransaction />
+      <NewTransaction addNewTransaction={addNewTransaction} />
 
     </div>
   )

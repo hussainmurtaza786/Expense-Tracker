@@ -6,12 +6,12 @@ function Expense() {
 
         <div className="income text">
             <h3 >Income</h3>
-            <p id="rs-inex">Rs:80000</p> 
+            <p id="rs-inex">Rs:{} </p> 
         </div>
         <hr style={{border:'2px solid blue', height:'40px'}}/>
         <div className="expense text">
             <h3>Expense</h3>
-           <p className="rs-inex">Rs:51000</p> 
+           <p className="rs-inex">Rs: </p> 
         </div>
       
 
