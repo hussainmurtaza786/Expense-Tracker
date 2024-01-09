@@ -10,7 +10,11 @@ const transactionData = [
   { desc: "Shopping", amount: -5000 },
   { desc: "Shopping", amount: -10000 },
 ]
-const expense = [
+
+
+
+
+const finflowdata = [
   {
     income: "50000",
     expense: "20000"
@@ -20,6 +24,13 @@ const expense = [
 function Container() {
   const [transactions, setTransaction] = useState(transactionData);
 
+  const [finflow, setFinFlow] = useState();
+
+  const addnewfinflow = (income, expense) => {
+    const newfinflow = { income: income, expense: expense }
+    finflow.push(newfinflow)
+    setFinFlow([...finflow])
+  }
 
   const addNewTransaction = (desc, amount) => {
     const newTrans = { desc: desc, amount: amount }
@@ -32,8 +43,8 @@ function Container() {
   return (
     <div id="container" >
       {/* <button onClick={() => { addNewTransaction("Shopping", -1000) }} >Add New txn</button> */}
-      <Header />
-      <Expense addNewTransaction={addNewTransaction} />
+      <Header transactions={transactions} />
+      <Expense transactions={transactions} />
       <Transaction transactions={transactions} />
       <NewTransaction addNewTransaction={addNewTransaction} />
 

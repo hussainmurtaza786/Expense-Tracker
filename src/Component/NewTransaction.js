@@ -6,25 +6,35 @@ function NewTransaction({ addNewTransaction, radioBtn }) {
   const [income, setIncome] = useState(0);
   const [desc, setDesc] = useState("")
   const [transactionType, setTransactionType] = useState("")
-  // const [radio1, setRadio1] = useState('')
 
   const StoreValue = () => {
-    if (transactionType === "") {
+    if (!["income", "expanse"].includes(transactionType)) {
       alert('Please select a transaction type');
-      return;
+      // return;
     }
-    if (income === '' || income == '0' || desc === "") {
+    else if (income === '' || income == '0' || desc === "") {
       alert('Please enter some Amount and Description value')
     } else {
-      addNewTransaction(String(desc), Number(income))
-      setIncome(0);
-      setDesc('');
-      setTransactionType('');
+      if (transactionType === 'income') {
+        addNewTransaction(desc, Number(income))
+        setTimeout(() => {
+
+          setIncome(0);
+          setDesc('');
+          setTransactionType('');
+        }, 3000);
+      }
+      else if (transactionType === 'expanse') {
+        addNewTransaction(desc, -Number(income))
+        setTimeout(() => {
+
+          setIncome(0);
+          setDesc('');
+          setTransactionType('');
+        }, 3000);
+      }
     }
 
-    if(income<0){
-
-    }
 
   }
 

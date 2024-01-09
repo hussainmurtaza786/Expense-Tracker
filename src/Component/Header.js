@@ -1,23 +1,21 @@
 import { toBeInTheDocument } from '@testing-library/jest-dom/matchers'
 import React, { useState } from 'react'
 
-function Header({ addNewTransaction }) {
-
+function Header({ transactions }) {
+    const amounts = transactions.map(tx => tx.amount)
+console.log(amounts)
+// Total=
 
     return (
         <div className="header">
             <h2 className="center">
-                Expenser Tracker
+                Expense Tracker
             </h2>
             <h3 className="center">
                 by Hussain
             </h3>
-            <span className="balance font-size center">
-                <h5> Balance: </h5>
-            </span>
-            <span className="Rs font-size center">
-               
-            </span>
+           
+            
         </div>
     )
 }
