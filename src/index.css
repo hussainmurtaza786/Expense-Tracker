@@ -139,8 +139,11 @@ body {
 
 .footerHr {
   margin: 25px 0px;
-}
 
+}
+.items-transaction{
+font-size: 20px;
+}
 .amount {
   color: rgb(25, 0, 255);
   padding: 4px 15px;
@@ -154,9 +157,26 @@ body {
 }
 
 .close-x:hover {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   color: Blue;
   cursor: pointer;
-
+  border-radius: 20px;
+  
+}
+.x-button{
+  cursor: pointer;
+font-size: 15px;  
+border-radius: 20px;
+width: 50px;
+}
+.x-text{
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #footer{
   display: flex;

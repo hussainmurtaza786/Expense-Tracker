@@ -24,7 +24,14 @@ function Container() {
     const newTrans = { desc: desc, amount: amount }
     transactions.push(newTrans);
     setTransaction([...transactions]);
+
   }
+    const removeTransaction = (index) => {
+      const updatedTransactions = [...transactions];
+      updatedTransactions.splice(index, 1);
+      setTransaction(updatedTransactions);
+    };
+    
  
 
 
@@ -35,7 +42,8 @@ function Container() {
       {/* <button onClick={() => { addNewTransaction("Shopping", -1000) }} >Add New txn</button> */}
       <Header transactions={transactions} />
       <Expense transactions={transactions} />
-      <Transaction transactions={transactions} />
+      {/* <Transaction transactions={transactions}  removeTransaction={removeTransaction } /> */}
+      <Transaction transactions={transactions} removeTransaction={removeTransaction} />
       <NewTransaction addNewTransaction={addNewTransaction} />
 
     </div>
