@@ -50,7 +50,7 @@ function Expense({ transactions }) {
       <hr style={{ border: '2px solid blue', height: '70px' }} />
       <div className="expense text">
         <h3>Expense</h3>
-        <p id="rs-inex">Rs: {expanse} </p>
+        <p id="rs-inex">Rs: {Math.abs(expanse)} </p>
       </div>
       <hr style={{ border: '2px solid blue', height: '70px' }} />
 

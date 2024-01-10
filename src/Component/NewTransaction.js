@@ -39,7 +39,7 @@ function NewTransaction({ addNewTransaction, radioBtn }) {
           setTransactionType('');
         }, 3000);
       }
-      else if (transactionType === 'expanse') {
+      else if (transactionType == 'expanse') {
         addNewTransaction(desc, -Number(income))
         setTimeout(() => {
 

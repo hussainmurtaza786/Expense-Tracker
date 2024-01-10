@@ -18,7 +18,7 @@ const handleremove=(index)=>{
         return (
           <div key={idx} className="items-transaction" style={{backgroundColor:inputBackgroundColor}} >
             {trans.desc} 
-            <div className="items-transaction-" onClick={handleremove}>
+            <div className="items-transaction-" >
               Rs:{trans.amount}
             </div>
             <div>
