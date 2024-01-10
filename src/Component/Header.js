@@ -8,12 +8,12 @@ console.log(amounts)
 
     return (
         <div className="header">
-            <h2 className="center">
+            <h1 className="center">
                 Expense Tracker
-            </h2>
-            <h3 className="center">
+            </h1>
+            <h1 className="center">
                 by Hussain
-            </h3>
+            </h1>
            
             
         </div>

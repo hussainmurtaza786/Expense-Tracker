@@ -13,11 +13,11 @@ body {
 }
 
 #tracker-main {
-  margin-top: 10px;
+  padding: 20px 30px;
   /* width: 0vw; */
-  background-color: antiquewhite;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  background-color: rgb(127, 157, 255);
+  border: 4px solid blue;
+  border-radius: 20px;
 }
 
 .center {
@@ -26,23 +26,25 @@ body {
   justify-content: center;
 }
 
-#container {
-  
-  /* width: 50%; */
-  /* height: 100%; */
-}
-
 .font-size {
   font-size: 25px;
 }
 
 #income-expense {
-  /* order: 2px solid red; */
-  /* width: 100%; */
   display: flex;
   padding: 10px 25px;
   justify-content: space-evenly;
-  background-color: rgb(212, 215, 255);
+  background-color: rgb(101, 136, 248);
+
+}
+
+.income-radio {
+  margin: 12px 0px;
+}
+
+.expense-radio {
+  margin: 12px 0px;
+
 }
 
 .income {
@@ -66,10 +68,15 @@ body {
   margin: 4px 20px;
 }
 
+.new-transaction {
+  margin: 4px 8px;
+
+}
+
 .items-transaction {
   margin: 8px 4px;
   height: 40px;
-  background-color: rgb(238, 255, 0);
+  /* background-color: lightgreen ; */
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   display: flex;
@@ -77,62 +84,110 @@ body {
   border: 2px solid black;
   justify-content: space-around;
 }
-.salary-box{
-  display: flex;
-  justify-content: center;
-}
-.income-here{
+
+.income-here {
   margin: 2px 8px;
   font-size: 20px;
 }
-.submit{
-  margin: 2px 15px;
+
+.submit {
+  margin: 4px 8px;
+  width: 100px;
+  height: 30px;
   cursor: pointer;
-  margin: 0px 6px;
-  width: 5vw;
-  height: 4vh;
-  padding: 4px 15px;
 
 }
-#balance-amount {
-  width: 20vw;
-  padding: 2px 8px;
-  height: 4vh;
+
+.balance-amount {
+  margin: 8px;
+  padding: 6px 10px;
   border: none;
-  background-color: antiquewhite;
+  background-color: rgb(228, 228, 228);
   font-size: 20px;
 }
-#rs-inex{
+
+#rs-inex {
   text-decoration: underline 2px black;
 }
-.text{
-  color: white;
+
+.text {
   font-size: 25px;
 }
-.new-transaction{
-  margin: 2px 20px;
-}
-.description{
-  margin: 0px 6px;
-  width: 20vw;
-  height: 4vh;
-  border-radius: 5px;
-  padding: 4px 15px;
+
+.description {
+  margin: 8px;
+  padding: 6px 10px;
   border: none;
-  background-color:antiquewhite ;
   font-size: 20px;
-color: rgb(25, 0, 255);
+  background-color: rgb(228, 228, 228);
 }
-.amount{
-color: rgb(25, 0, 255);
+
+.salary-box {
+  margin: 8px;
+  font-size: 20px;
+  padding: 12px 15px;
+  height: 30px;
+  background-color: rgb(228, 228, 228);
+
+
+}
+
+.newAmount {
+  height: 30px;
+  margin: 4px 8x;
+}
+
+.footerHr {
+  margin: 25px 0px;
+}
+
+.amount {
+  color: rgb(25, 0, 255);
   padding: 4px 15px;
   width: 15vw;
   border: none;
-  background-color:antiquewhite ;
+  background-color: antiquewhite;
   font-size: 20px;
   height: 4vh;
   margin: 0px 6px;
   border-radius: 5px;
+}
+
+.close-x:hover {
+  color: Blue;
+  cursor: pointer;
+
+}
+#footer{
+  display: flex;
+}
+.circle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.circle-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  border-radius: 250px;
+  color: white;
+  font-size: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+}
 
 
+.more-logo{
+  width: 40px;
+  height: 40px;
+  margin: 12px 8px;
+}
+.form{
+  border-radius: 20px;
 }

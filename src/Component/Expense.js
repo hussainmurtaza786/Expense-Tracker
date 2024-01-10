@@ -10,7 +10,8 @@ function Expense({ transactions }) {
     if (tx.amount > 0) {
       income += tx.amount;
     } else {
-      expanse += tx.amount;
+      expanse += tx.amount; 
+
     }
   });
 
@@ -46,12 +47,12 @@ function Expense({ transactions }) {
 
         <p id="rs-inex">Rs:{income}  </p>
       </div>
-      <hr style={{ border: '2px solid blue', height: '40px' }} />
+      <hr style={{ border: '2px solid blue', height: '70px' }} />
       <div className="expense text">
         <h3>Expense</h3>
         <p id="rs-inex">Rs: {expanse} </p>
       </div>
-      <hr style={{ border: '2px solid blue', height: '40px' }} />
+      <hr style={{ border: '2px solid blue', height: '70px' }} />
 
       <div className="expense text">
         <h3>Balance</h3>

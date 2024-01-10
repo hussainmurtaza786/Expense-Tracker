@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './Header'
 import Expense from './Expense'
 import Transaction from './Transaction'
@@ -14,34 +14,24 @@ const transactionData = [
 
 
 
-const finflowdata = [
-  {
-    income: "50000",
-    expense: "20000"
-  }
-]
+
+
+
 
 function Container() {
   const [transactions, setTransaction] = useState(transactionData);
-
-  const [finflow, setFinFlow] = useState();
-
-  const addnewfinflow = (income, expense) => {
-    const newfinflow = { income: income, expense: expense }
-    finflow.push(newfinflow)
-    setFinFlow([...finflow])
-  }
-
   const addNewTransaction = (desc, amount) => {
     const newTrans = { desc: desc, amount: amount }
     transactions.push(newTrans);
     setTransaction([...transactions]);
   }
+ 
+
 
 
 
   return (
-    <div id="container" >
+    <div id="container">
       {/* <button onClick={() => { addNewTransaction("Shopping", -1000) }} >Add New txn</button> */}
       <Header transactions={transactions} />
       <Expense transactions={transactions} />
